@@ -41,11 +41,11 @@ Un diagrama de flujo o diagrama de actividades es una **representación gráfica
 -----------
 
 ### Tipos de Diagramas de Flujo
- * ** Formato vertical: ** En él el flujo o la secuencia de las opraciones, va de arriba hacia abajo. Es una lista ordenada de las operaciones de un proceso con toda la información que se considere necesaria, según su propósito.
+ * **Formato vertical: ** En él el flujo o la secuencia de las opraciones, va de arriba hacia abajo. Es una lista ordenada de las operaciones de un proceso con toda la información que se considere necesaria, según su propósito.
  
- * ** Formato horizontal:** En él, el flujo o la secuencia de las operaciones, va de izquierda a derecha.
+ * **Formato horizontal:** En él, el flujo o la secuencia de las operaciones, va de izquierda a derecha.
  
- * **Formato panorámico:** El proceso entero está representado en una sola cart y puede apreciarse de una sola mirada mucho más rápido que leyendo el texto, lo que facilita su comprensión, aun para personas no familiarizadas. Registra no solo en línea vertical, sino también en horizontal, distintas acciones simultáneas y la participación de más de un puesto o departamento que el formato vertical no registra.
+ * **Formato panorámico:** El proceso entero está representado en una sola carta y puede apreciarse de una sola mirada mucho más rápido que leyendo el texto, lo que facilita su comprensión, aun para personas no familiarizadas. Registra no solo en línea vertical, sino también en horizontal, distintas acciones simultáneas y la participación de más de un puesto o departamento que el formato vertical no registra.
  
  * **Formato arquitectónico:** Describe el itinerario de ruta de una forma o persona sobre el plano arquitectónico del área de trabjo. El primero de los flujogramas es eminentemente descriptivo, mientras que los utilizados son fundamentalmente representativos. 
 
