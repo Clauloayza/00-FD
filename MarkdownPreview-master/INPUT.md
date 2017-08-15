@@ -1,47 +1,124 @@
-# Markdown Preview
+# Input / Output
 
-A [Brackets](https://github.com/adobe/brackets) extension that provides a live preview of markdown documents. 
+* Tipo: `lectura`
+* Formato: `self-learnig`
+* Duración: `30min`
 
-![Alt text](./screenshots/markdown-preview.png?raw=true "Markdown Preview")
+### Objetivos de Aprendizaje
 
-### Installation
+* Introducir datos y obtener resultados en la computadora para su procesamiento.
+* Crear controles interactivos para formularios basados en la web para aceptar datos del ususario y obtener la salida de los conocimientos adquiridos.
 
-* Select **File > Extension Manager...** (or click the "brick" icon in the toolbar)
-* Search for "Markdown Preview"
-* Click the **Install** button
 
-### How To Use
-When a markdown document (with extension ".md" or ".markdown") is open, a markdown icon is shown in the 
-toolbar at the top of the Brackets window. Click this icon to open the preview panel. The panel can be 
-resized vertically.
 
-The preview is updated as you edit the document. You can hover over links to see the href in a tooltip,
-or click them to open in your default browser.
+##  Input
 
-Hover over the preview area to show the settings "gear" icon. Click this icon to change the settings.
+* La etiqueta < input > especifica un campo de entrada donde el usuario puede introducir datos.
 
-### Settings
+* Los elementos < input > se utilizan dentro de un elemento < form > pra declarar controles de entrada que permiten a los usuarios introducir datos.
 
-#### Format
-By default, the document is rendered as standard Markdown. Change the dropdown to "GitHub-Flavored (GFM)" 
-to see the Markdown as it would appear in a GitHub issue, pull request, or comment.
+* El campo de entrada puede variar de muchas maneras, dependiendo del atributo de tipo.
 
-#### Theme
-There are three themes available: 
+* Un método para poder ingresar data, texto, o números a Javascript de manera que puedan ser usados más adelante es **prompt().**
 
-* Light - Black text on a light background, similar to GitHub wiki pages.
-* Dark - Light text on a dark background.
-* Classic - Black text with a serif font on a light background
+* Puedes usarlo de tres formas:
 
-#### Sync scroll position
-When checked, scrolling in the editor scrolls the preview to roughly the same location. 
-The scroll position of the preview is based on the scroll position of the source document, so the 
-position may be out of sync if you have really long lines in your source file. Scroll synchronization
-works best when the preview and code view are the same height.
+ 1. prompt(). Muestra el cuadro de diálogo, con el **input** para poder poner los datos.
+ 2. prompt("texto"). Muestra el cuadro de diálogo con el texto indicado para darle contexto al usuario.
+ 3. prompt("texto","default"). Muestra el cuadro de diálogo con el texto indicado para darle contexto al usuario. Además ingresara en el input la respuesta por defecto.
+ 
+ Con prompt() puedes solicitar data al usuario. Por ejemplo "¿En donde estudiar?"
+ 
+ ![Con titulo](images/input.png "titulo")
+ 
+ ## Output
+ 
+* La etiqueta < output > es nueva en HTML5.
+* Cualquier informción que hay sido procesada y enviada desde un ordenador o dispositivo similar se considera **salida**. Un simple ejemplo de salida es todo lo que ve en el monitor de su computadora. La mitad inferior de la imagen muestra los datos que se envían desde un ordenador a una impresora, que se considera salida. Esos datos se imprimen en un pedazo de papael, también se considera una forma de salida.
+* Cuando se hace referencia HTML, la etiqueta < output > se utiliza para representar el resultado de la acción de un usuario o de un cálculo.
 
-### Credits
-This extension uses the following open source components:
+![Con titulo](images/inputoutput.png "titulo")
 
-* [Marked](https://github.com/chjj/marked) - A markdown parser written in JavaScript
-* [markdown-css-themes](https://github.com/jasonm23/markdown-css-themes) - The themes are based on the "Swiss" theme
-* [markdown-mark](https://github.com/dcurtis/markdown-mark) - The icon used in the toolbar
+***
+Los output son forma de exponer datos. Javascript no tiene método imprimir, ni display por defecto. Pero tiene otras formas de mostrar la data.
+
+1. Escribir la data en una alerta **window.alert()**
+2. Escribirlo directamente en el documento html con **document.write().**
+3. Escribirlo directamente en el documento html usando **innerHTML()**
+4. Escribir en la consola de browser con **console.log()**
+
+![console.log](images/console.png "console.log")
+***
+
+### Window.alert()
+
+El método alert() muestra un cuadro de alerta con un mensaje especificado y un botón **OK.**
+
+Un cuadro de alerta se utiliza a menudo si desea asegurarse de que la información llega a través del usuario. Este cuadro de alerta aleja el foco de la ventana actual y obliga al navegador a leer el mensaje.
+
+Escribir en la consola o en **repl.it**:
+
+                               window.alert("Hola Mundo");
+                              
+Al dar enter, en la consola, inidcamos que se ejecute lo escrito, el equivalente com un run de repl.it. Ambos están ejecutando la línea o líneas que ingresaste.
+Este comando mostrará una alerta con tu texto "Hola Mundo".
+
+Como observaremos en la imagen, al escribir **window.alert("Hola Mundo")** y dar enter, se ejecutara la línea de código y nos mostrará la alerta.
+
+![console.log](images/window.png "console.log")
+
+
+### Document.write()
+El método write() escribe expresiones HTML o código Javascript en un documento.
+
+El método write() se utiliza principalmente paralas pruebas: Si se utiliza después de que un documento HTML está completamente cargado, se eliminará todo el HTML existente.
+
+Cuando este método no se utiliza para realizar pruebas, suele utilizarse para escribir un texto en un flujo de salida abierto por el método **document.open()**
+
+Podemos escribir en la consola o en el repl.it:
+
+                                 document.write("Hola de nuevo");
+
+Al digitar esto ya sea en la consola o en repl.it, en el HTML existente se agregará el contenido que se escribio, teniendo resultado como se mostrará en la imagen siguiente.
+
+![](images/documentwrite.png "")
+
+Y al inspeccionarlo podremos obserbar contenido HTML.
+
+![](images/documentw.png "")
+
+### InnerHTML
+La propiedad innerHTML establece o devuelve el contenido HTML (html interno) de un elemento que se haya indicado.
+Mostraremos en el ejemplo el elemento **span** con **id "curso"** 
+
+![INNERhtml](images/documentw.png "innerHTML")
+
+### Console.log
+Permite escribir contenido en la consola y ejecutar funciones aritméticas. Se usa debug, depurar el cógido. Muestra mensajes que el desarrollador puede ver.
+Por ejemplo, en nuestro caso vamos a indicar un "Hola mundo" y una pequeña operación aritmética.
+
+![INNERhtml](images/consolelog.png "innerHTML")
+
+***
+## Comentarios en Js
+Los comentarios JavaScript se pueden utilizar para explicar el código JavaScript y para hacerlo más legible, también podemos utilizarlo para evitar la ejecución, al probar el código alternativo.
+Los comentarios en JS puede ser de más de una línea, usando la sintaxis:
+
+                       /* comentario de una o vrias líneas */
+
+Por ejemplo en la consola:
+ 
+![INNERhtml](images/coment.png "innerHTML")
+
+![INNERhtml](images/comentario.png "innerHTML")
+
+Tambien existen los comentarios de una sóla línea, estos comentarios afectan desde su posición hasta el final de línea. La sintaxis es como sigue:
+
+                       // comentario de una línea
+                       
+Por ejemplo.
+
+![INNERhtml](images/doblelinea.png "innerHTML")
+***
+
+A [Brackets](https://github.com/adobe/brackets) extension that provides a live 
