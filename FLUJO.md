@@ -56,47 +56,47 @@ Un diagrama de flujo o diagrama de actividades es una **representación gráfica
 ### Símbolos utilizados en diagramas de flujo
 * #### Inicio / Fin
 
-![](https://pablomonteserin.com/apuntes/diagramas-flujo/img/inicio-fin.svg) | Marca el inicio o el fin del Diagrama de Flujo
+![INNERhtml](images/inicio.png "innerHTML") | Marca el inicio o el fin del Diagrama de Flujo
 -- | --
 
 
 * #### Decisión
 
-![](http://www.monografias.com/trabajos60/diagrama-flujo-datos/Image26492.gif) | Expresa una Condición
+![INNERhtml](images/d.png "innerHTML")  | Expresa una Condición
 -- | --
 
 
    
 * #### Entrada
 
-![](https://resethn.files.wordpress.com/2013/03/image9.png) | Expresa lectura Cuando el ususario introduce Datos.
+![INNERhtml](images/entrada.png "innerHTML")  | Expresa lectura Cuando el ususario introduce Datos.
 -- | --
 
  
    
 * #### Proceso
 
-![](http://comosellama.net/wp-content/uploads/2015/05/Como-se-llaman-las-figuras-de-4-lados-rect%C3%A1ngulo.jpg) | Representa una actividad llevada a cabo en el Proceso
+![INNERhtml](images/proceso.png "innerHTML") | Representa una actividad llevada a cabo en el Proceso
 -- | --
    
 * #### Salida
 
-![](http://comosellama.net/wp-content/uploads/2015/05/Como-se-llaman-las-figuras-de-4-lados-rect%C3%A1ngulo.jpg) | Expresa salida de datos, resultado de datos, expresa escritura.
+![INNERhtml](images/salida.png "innerHTML")  | Expresa salida de datos, resultado de datos, expresa escritura.
 -- | --
 
 * #### Subrutina
 
-![](http://png-2.vector.me/files/images/1/5/151126/flowchart_subroutine_icon_symbol_clip_art_thumb.jpg) | Llama a un procedimiento
+![INNERhtml](images/subrutina.png "innerHTML")  | Llama a un procedimiento
 -- | --
 
 * #### Líneas de flujo
 
-![](http://3.bp.blogspot.com/-RuwSgAKdffM/VVURPKlAoSI/AAAAAAAACK0/n4oLFwbIswo/s1600/lineas%2Bde%2Bflujo.png) | Indican la secuencia de flujo de las operaciones del diagrama
+![INNERhtml](images/lineasdeflujo.png "innerHTML")  | Indican la secuencia de flujo de las operaciones del diagrama
 -- | --
 
 * #### Conector
 
-![](https://cdn2.louis.de/content/catalogue/articles/img170x170/10050239_920_FR_06.JPG) | Conecta las partes de un diagrama de flujo dentro de una misma página
+![INNERhtml](images/conector.png "innerHTML")  | Conecta las partes de un diagrama de flujo dentro de una misma página
 -- | --
 
 
